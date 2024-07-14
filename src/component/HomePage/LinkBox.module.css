@@ -1,0 +1,45 @@
+.linkbox_main{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    padding:30px 20px;
+    box-shadow: 1px 1px 5px 0px #00000026;
+    gap: 40px;
+
+}
+.must_read_post{
+    display: flex;
+    flex-direction: column;
+}
+.must_read_post_text{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    gap: 7.5px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #EAEAEA;
+}
+.mustread_points{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 220px;
+}
+.must_read_element{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 5px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #1682FD;
+}
+.icon{
+    flex-shrink: 0;
+}

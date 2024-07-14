@@ -1,0 +1,217 @@
+.main_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.posts_main{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 2px 1px 5px 0px #00000026;
+    gap: 20px;
+    border-radius: 5px;
+
+}
+.profile_box{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+.profile_box_left{
+    display: flex;
+    gap: 15px;
+}
+.user_image{
+    height: 40px;
+    width: 40px;
+}
+.name_time{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top:5px;
+
+}
+.name{
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+}
+.time{
+    font-size: 10px;
+    font-weight: 400;
+    color: #808080
+}
+.profile_box_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question_answer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.question{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+.answer{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 25px;
+}
+.bottom_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bottom_left_element{
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #808080;
+}
+.bottom_right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.bottom_right_element{
+    display: flex;
+    padding: 8px 20px;
+    gap: 10px;
+    color: #FFFFFF;
+    align-items: center;
+    background-color: #1682FD;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 12px;
+}
+.suggestions{
+    display: flex;
+    align-items: center;
+font-size: 18px;
+font-weight: 500;
+line-height: 25px;
+text-align: center;
+color: #808080;
+margin: 20px 0px;
+
+}
+.comment_box{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 2px 1px 5px 0px #00000026;
+    gap: 20px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+.comment_input{
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 2px solid #EAEAEA;
+    outline: none;
+}
+.comment_input:focus{
+    border: 2px solid #EAEAEA;
+    box-shadow: none;
+}
+.comment_btns{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 10px;
+}
+.comment_cancel{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    background-color: #EAEAEA;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #808080;
+}
+.comment_suggest{
+    display: flex;
+    align-items: center;
+    background-color: #F48023;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    gap: 5px;
+
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-left: 5px solid #F48023;
+    box-shadow: 2px 1px 5px 0px #00000026;
+    gap: 20px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+.comment_list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+.comment_text{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EAEAEA;
+}
+.bottom_left_icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.like{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #808080;
+}
+.bottom_hidereplies{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #1682FD;
+}

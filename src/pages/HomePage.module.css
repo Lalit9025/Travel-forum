@@ -1,0 +1,9 @@
+.homepage_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+}
+.homepage_categories{
+
+}
