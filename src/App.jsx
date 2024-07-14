@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage'
 import PostPage from './pages/PostPage'
 import { Route, Routes } from 'react-router-dom'
 import CreatePost from './component/HomePage/CreatePost'
+import SignInSignUp from './pages/SignInSignUp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,11 +17,9 @@ function App() {
     <>
      <Routes>
          <Route path = '/' element ={<HomePage/>}/>
-         {/* <Route path = '/login' element ={<LoginPage/>}/> */}
+         <Route path = '/login' element ={<SignInSignUp/>}/>
          <Route path = '/post' element ={<PostPage/>}/>
          <Route path = '/createpost' element ={<CreatePost/>}/>
-
-
       </Routes>
     </>
   )
