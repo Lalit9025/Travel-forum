@@ -6,9 +6,9 @@ import { FiEye } from "react-icons/fi";
 import { MdOutlineChatBubbleOutline } from "react-icons/md";
 import { FaArrowUp } from "react-icons/fa";
 
-const PostBox = () => {
+const PostBox = ({onClick }) => {
   return (
-    <div className={styles.posts_main}>
+    <div className={styles.posts_main} onClick={onClick}>
         <div className={styles.profile_box}>
             <div className={styles.profile_box_left}>
                 <img src={profileimage} className={styles.user_image}/>

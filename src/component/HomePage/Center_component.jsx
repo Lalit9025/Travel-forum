@@ -26,12 +26,17 @@ import styles from './Center_component.module.css';
 import { IoIosTimer } from "react-icons/io";
 import PostBox from './PostBox';
 import Postdescription from './Postdescription';
+import { useNavigate } from 'react-router-dom';
 
 const Center_component = () => {
   const [selectedCategory, setSelectedCategory] = useState('New');
+  const navigate = useNavigate();
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+  };
+  const handlePostClick = () => {
+    navigate('/post');
   };
 
   return (
@@ -63,10 +68,10 @@ const Center_component = () => {
         </div>
       </div>
       <div className={styles.posts}>
-        <PostBox />
-        <PostBox />
-        <PostBox />
-        <PostBox />
+        <PostBox onClick={handlePostClick} />
+        <PostBox onClick={handlePostClick} />
+        <PostBox onClick={handlePostClick}/>
+        <PostBox onClick={handlePostClick}/>
         {/* <Postdescription/> */}
       </div>
     </div>

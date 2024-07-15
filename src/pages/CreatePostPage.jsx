@@ -1,6 +1,7 @@
 import React from 'react'
 import CreatePost from '../component/HomePage/CreatePost'
 import LinkBox from '../component/HomePage/LinkBox'
+import Layout from '../component/layout/Layout'
 
 const CreatePostPage = () => {
   return (

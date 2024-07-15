@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './SignInSignUp.css';
+import google from '../assets/google.png'
+import axios from 'axios'
 
 const SignInSignUp = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -19,6 +21,19 @@ const SignInSignUp = () => {
 
   const handleSignUpClick = () => {
     setIsSignIn(true);
+  };
+
+  // const handleGoogleSignIn = async () => {
+  //   try {
+  //     const response = await axios.get('http://localhost:8080/api/v1/auth/google');
+  //     window.location.href = response.data.authUrl;
+
+  //   } catch (error) {
+  //     console.error('Error during Google Sign-In:', error);
+  //   }
+  // }
+  const handleGoogleSignIn = () => {
+    window.location.href = 'http://localhost:8080/api/v1/auth/google';
   };
 
   return (
@@ -56,6 +71,12 @@ const SignInSignUp = () => {
         <div className="form-container sign-in">
           <form action="#">
             <h2>login</h2>
+            <div className="form-group">
+             <div className='signIn_google' onClick={handleGoogleSignIn}>
+              <img src={google} className='google_img'/>
+              <span>Google</span>
+             </div>
+            </div>
             <div className="form-group">
               <input type="text" required />
               <i className="fas fa-user"></i>
